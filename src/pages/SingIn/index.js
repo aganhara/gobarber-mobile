@@ -1,8 +1,14 @@
 import React from 'react';
 import { Text } from 'react-native';
 
+import Background from '~/components/Background';
+
 // import { Container } from './styles';
 
 export default function SingIn() {
-  return <Text>SignIn</Text>;
+  return (
+    <Background>
+      <Text>SignIn</Text>
+    </Background>
+  );
 }
