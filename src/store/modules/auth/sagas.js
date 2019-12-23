@@ -26,7 +26,6 @@ export function* signIn({ payload }) {
     }
 
     api.defaults.headers.Authorization = `Bearer ${token}`;
-
     yield put(signInSuccess(token, user));
 
     // history.push('/dashboard');
@@ -46,7 +45,6 @@ export function* signUp({ payload }) {
       name,
       email,
       password,
-      provider: true,
     });
     // history.push('/');
   } catch (error) {
