@@ -3,6 +3,8 @@ import { StatusBar } from 'react-native';
 
 import Routes from './routes';
 
+import './config/ReactotronConfig';
+
 // import { Container } from './styles';
 
 export default function src() {
