@@ -14,7 +14,7 @@ import {
   SignLinkText,
 } from './styles';
 
-export default function SingIn() {
+export default function SingIn({ navigation }) {
   return (
     <Background>
       <Container>
@@ -38,7 +38,7 @@ export default function SingIn() {
 
         <SubmitButton onPress={() => {}}>Acessar</SubmitButton>
 
-        <SignLink onPress={() => {}}>
+        <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText>Criar conta gratuita</SignLinkText>
         </SignLink>
       </Container>
