@@ -1,8 +1,17 @@
 import React from 'react';
-import { View } from 'react-native';
 
-// import { Container } from './styles';
+import Background from '~/components/Background';
+
+import { Container } from './styles';
 
 export default function SelectDateTime() {
-  return <View />;
+  return (
+    <Background>
+      <Container />
+    </Background>
+  );
 }
+
+SelectDateTime.navigationOptions = {
+  title: 'Selecione o horário',
+};
