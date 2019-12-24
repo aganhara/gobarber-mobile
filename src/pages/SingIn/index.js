@@ -57,11 +57,11 @@ export default function SingIn({ navigation }) {
             value={password}
             onChangeText={setPassword}
           />
-        </Form>
 
-        <SubmitButton loading={loading} onPress={handleSubmit}>
-          Acessar
-        </SubmitButton>
+          <SubmitButton loading={loading} onPress={handleSubmit}>
+            Acessar
+          </SubmitButton>
+        </Form>
 
         <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText>Criar conta gratuita</SignLinkText>

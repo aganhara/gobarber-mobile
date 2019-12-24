@@ -72,11 +72,10 @@ export default function SingUp({ navigation }) {
             value={password}
             onChangeText={setPassword}
           />
+          <SubmitButton loading={loading} onPress={handleSubmit}>
+            Acessar
+          </SubmitButton>
         </Form>
-
-        <SubmitButton loading={loading} onPress={handleSubmit}>
-          Acessar
-        </SubmitButton>
 
         <SignLink onPress={() => navigation.navigate('SignIn')}>
           <SignLinkText>Já tenho conta</SignLinkText>
